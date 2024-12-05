@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=960 height=510 tabindex="-1" style="width: 960px; height: 510px; background: #231F20"></canvas>
-    <script src="Build/EatToast.loader.js"></script>
+    <script src="Build/EatToastBuild.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/EatToast.data.unityweb",
-        frameworkUrl: "Build/EatToast.framework.js.unityweb",
-        codeUrl: "Build/EatToast.wasm.unityweb",
+        dataUrl: "Build/EatToastBuild.data.unityweb",
+        frameworkUrl: "Build/EatToastBuild.framework.js.unityweb",
+        codeUrl: "Build/EatToastBuild.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "EatToast",
